@@ -1,5 +1,5 @@
     body {
-        background-color: black;
+        background-color: skyblue;
     }
     
     h1 {
@@ -37,7 +37,7 @@
     }
     
     .button-container {
-        top: -20px;
+        top: -30px;
         position: relative;
     }
     

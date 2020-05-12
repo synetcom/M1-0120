@@ -1,7 +1,7 @@
 <?php
 // connect to database
 // mysqli to connect to database
-$conn = mysqli_connect('localhost:8889', 'synet', 'Ginger5609', 'form');
+$conn = mysqli_connect('localhost:8889', 'microsoft', 'Ginger5609', 'form');
 // localhost:port number, id, pw, database name
 
 // check connection

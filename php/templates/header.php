@@ -24,9 +24,9 @@ form{
 <body class="grey lighten-s">
     <nav class="white z-depth-0">
         <div class="container">
-<a href="#" class="brand-logo brand-text">Hello HTML</a>
+<a href="../php/index.php" class="brand-logo brand-text">Hello HTML</a>
 <ul id="nav-mobile" class="right hide-on-small-and-down">
-    <li><a href="#" class="btn brand z-depth-0">Add a button</a></li>
+    <li><a href="../php/add.php" class="btn brand z-depth-0">Add a button</a></li>
    
 </ul>
 

@@ -3,7 +3,9 @@
 
 include('./config/db_connect.php');
 
-
+$title = $email =$content ='';
+// if submit button pressed all array variable updated
+$errors = array('email'=> '', 'title'=>'', 'content'=>'');
 // global array variable
 // ehenever the submit button is pressed, condition check
 if(isset($_POST['submit']))

@@ -34,7 +34,7 @@ mysqli_close($conn);
                         <div><?php echo htmlspecialchars($user['content']); ?></div>
                     </div>
                     <div class="card-action right-align">
-                        <a class="brand-text" href="#">more info</a>
+                        <a class="brand-text" href="./details.php?id=<?php echo $user['id'] ?>">more info</a>
                     </div>
                 </div>
             </div>

@@ -67,7 +67,7 @@ $sql = "INSERT INTO users(title, email, content) VALUES ('$title', '$email', '$c
 // save to db and check
 if(mysqli_query($conn, $sql)){
     // successful
-    header('Location:index.php');
+    header('Location:thank.php');
 }else{
     // error
     echo 'Query error' . mysqli_error($conn);
@@ -81,16 +81,15 @@ if(mysqli_query($conn, $sql)){
 
 
 
-<!DOCTYPE html>
-<html lang="en">
+
 <?php 
 include ('./templates/header.php');
 ?>
 <section class="container grey-text">
-<h4 class="center">Add an element</h4>
+<h4 class="center">Newsletter</h4>
 
 <!-- form -->
-<form action="add.php" class="white" method="POST">
+<form action="contact.php" class="white" method="POST">
 <label> Your Email</label>
 <input type="email" name="email">
 <label> Title</label>
@@ -103,5 +102,3 @@ include ('./templates/header.php');
 </section>
     <?php
     include ('./templates/footer.php') ?>
-</body>
-</html>

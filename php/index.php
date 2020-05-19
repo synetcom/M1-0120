@@ -4,7 +4,7 @@
 include('./config/db_connect.php');
 
 // write query for all data
-$sql ='SELECT title, content, id FROM users ORDER BY created_at';
+$sql ='SELECT title, content, email, id FROM users ORDER BY created_at';
 
 // make query and get result
 $result = mysqli_query($conn, $sql);
@@ -41,11 +41,13 @@ mysqli_close($conn);
 
 <!-- separate by comma -->
 <!-- start of for each -->
-<ul><?php foreach(explode(',', $user['content']) as $con): ?>
-<li><?php echo htmlspecialchars($con); ?></li>
+<?php  echo htmlspecialchars($user['email']);?>
+<ul><?php foreach(explode(',', $user['content']) as $content): ?>    
+<li><?php echo htmlspecialchars($content); ?></li>
 <!-- end of foreach -->
 <?php endforeach; ?>
 </ul>
+
 
 
 </div>

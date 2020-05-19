@@ -43,12 +43,12 @@ mysqli_close($conn);
 <!DOCTYPE html>
 <html lang="en">
 <?php include ('./templates/header.php');?>
-<div class="ciontainer center">
+<div class="container center">
 
 <?php if($user): ?>
 
     <h4><?php echo htmlspecialchars($user['title']);?></h4>
-<p>Created by: <?php htmlspecialchars($pizza['email']); ?></p>
+<p>Created by: <?php htmlspecialchars($user['email']); ?></p>
 <p><?php echo date($user['created_at']); ?></p>
 <h5>Contents:</h5>
 <p><?php echo htmlspecialchars($user['content']) ?></p>
